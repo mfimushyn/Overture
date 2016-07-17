@@ -1,0 +1,11 @@
+﻿CREATE USER [DBA]
+FROM EXTERNAL PROVIDER;
+
+ALTER ROLE db_ddladmin
+ADD MEMBER [DBA];
+
+ALTER ROLE db_datawriter
+ADD MEMBER [DBA];
+
+ALTER ROLE db_datareader
+ADD MEMBER [DBA];

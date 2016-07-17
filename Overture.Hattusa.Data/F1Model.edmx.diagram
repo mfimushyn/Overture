@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8c5ca82447cc4a76a14f7ffc3b80e959" Name="Diagram1">
+        <EntityTypeShape EntityType="F1Model.Car" Width="1.5" PointX="5.25" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="F1Model.Country" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="F1Model.Driver" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="F1Model.GrandPrix" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="F1Model.Lap" Width="1.5" PointX="7.5" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="F1Model.Race" Width="1.5" PointX="5.25" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="F1Model.RaceEvent" Width="1.5" PointX="8.25" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="F1Model.RaceEventType" Width="1.5" PointX="7.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="F1Model.RaceResult" Width="1.5" PointX="10.5" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="F1Model.Team" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="F1Model.TeamBase" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="F1Model.TeamName" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="F1Model.Track" Width="1.5" PointX="3" PointY="10.75" IsExpanded="true" />
+        <AssociationConnector Association="F1Model.FK_Car_Driver" ManuallyRouted="false" />
+        <AssociationConnector Association="F1Model.FK_Car_Team" ManuallyRouted="false" />
+        <AssociationConnector Association="F1Model.FK_Lap_Car" ManuallyRouted="false" />
+        <AssociationConnector Association="F1Model.FK_RaceResult_Car" ManuallyRouted="false" />
+        <AssociationConnector Association="F1Model.FK_Driver_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="F1Model.FK_GrandPrix_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="F1Model.FK_Track_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="F1Model.FK_Race_GrandPrix" ManuallyRouted="false" />
+        <AssociationConnector Association="F1Model.FK_Lap_Race" ManuallyRouted="false" />
+        <AssociationConnector Association="F1Model.FK_Race_Track" ManuallyRouted="false" />
+        <AssociationConnector Association="F1Model.FK_RaceResult_Race" ManuallyRouted="false" />
+        <AssociationConnector Association="F1Model.FK_RaceEvent_TeamBase" ManuallyRouted="false" />
+        <AssociationConnector Association="F1Model.FK_RaceResult_RaceEvent" ManuallyRouted="false" />
+        <AssociationConnector Association="F1Model.FK_Team_TeamBase" ManuallyRouted="false" />
+        <AssociationConnector Association="F1Model.FK_TeamName_Team" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

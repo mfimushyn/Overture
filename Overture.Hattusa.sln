@@ -5,6 +5,21 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "F1DB", "F1DB\F1DB.sqlproj", "{56DCD8DB-64CD-404F-932B-1D4E99045195}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Overture.Hattusa.Data", "Overture.Hattusa.Data\Overture.Hattusa.Data.csproj", "{EB34741C-17A7-48A5-AF69-2D7DE2BC4454}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Overture.Hattusa.Data.Test", "Data.Test\Overture.Hattusa.Data.Test.csproj", "{EB76AABF-4770-4BA3-AE85-A4830F5EF313}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Overture.Hattusa.Import", "Overture.Hattusa.Import\Overture.Hattusa.Import.csproj", "{B467E2D7-EC01-419B-8E17-463D45C205DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Overture.Hattusa.Import.Test", "Overture.Hattusa.Import.Test\Overture.Hattusa.Import.Test.csproj", "{A99E3E33-BC21-4B49-B9E1-A1E625F7F8F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Overture.Hattusa.Utility", "Overture.Hattusa.Utility\Overture.Hattusa.Utility.csproj", "{E34DBE17-C542-4DDB-9EA4-F350B33415D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{BF1243E4-E695-4551-8C70-35E864CF1999}"
+	ProjectSection(SolutionItems) = preProject
+		Config\ConnectionStrings.config = Config\ConnectionStrings.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +32,26 @@ Global
 		{56DCD8DB-64CD-404F-932B-1D4E99045195}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56DCD8DB-64CD-404F-932B-1D4E99045195}.Release|Any CPU.Build.0 = Release|Any CPU
 		{56DCD8DB-64CD-404F-932B-1D4E99045195}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{EB34741C-17A7-48A5-AF69-2D7DE2BC4454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB34741C-17A7-48A5-AF69-2D7DE2BC4454}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB34741C-17A7-48A5-AF69-2D7DE2BC4454}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB34741C-17A7-48A5-AF69-2D7DE2BC4454}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB76AABF-4770-4BA3-AE85-A4830F5EF313}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB76AABF-4770-4BA3-AE85-A4830F5EF313}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB76AABF-4770-4BA3-AE85-A4830F5EF313}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB76AABF-4770-4BA3-AE85-A4830F5EF313}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B467E2D7-EC01-419B-8E17-463D45C205DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B467E2D7-EC01-419B-8E17-463D45C205DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B467E2D7-EC01-419B-8E17-463D45C205DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B467E2D7-EC01-419B-8E17-463D45C205DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A99E3E33-BC21-4B49-B9E1-A1E625F7F8F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A99E3E33-BC21-4B49-B9E1-A1E625F7F8F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A99E3E33-BC21-4B49-B9E1-A1E625F7F8F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A99E3E33-BC21-4B49-B9E1-A1E625F7F8F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E34DBE17-C542-4DDB-9EA4-F350B33415D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E34DBE17-C542-4DDB-9EA4-F350B33415D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E34DBE17-C542-4DDB-9EA4-F350B33415D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E34DBE17-C542-4DDB-9EA4-F350B33415D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

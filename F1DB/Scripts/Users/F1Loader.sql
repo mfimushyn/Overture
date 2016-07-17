@@ -1,0 +1,13 @@
+﻿CREATE USER [F1Loader]
+FROM EXTERNAL PROVIDER;
+
+ALTER ROLE db_datawriter
+ADD MEMBER [F1Loader];
+
+ALTER ROLE db_datareader
+ADD MEMBER [F1Loader];
+
+GRANT CONNECT TO [F1Loader];
+
+
+

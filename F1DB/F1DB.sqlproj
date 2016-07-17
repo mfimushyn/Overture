@@ -66,6 +66,8 @@
     <Folder Include="Scripts" />
     <Folder Include="Scripts\Tables" />
     <Folder Include="Scripts\Schemas" />
+    <Folder Include="Scripts\Other" />
+    <Folder Include="Scripts\Users" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Scripts\Tables\his.Country.sql" />
@@ -83,5 +85,10 @@
     <Build Include="Scripts\Tables\his.RaceResult.sql" />
     <Build Include="Scripts\Tables\his.RaceEvent.sql" />
     <Build Include="Scripts\Tables\his.RaceEventType.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\Other\Test.sql" />
+    <None Include="Scripts\Users\DBA.sql" />
+    <None Include="Scripts\Users\F1Loader.sql" />
   </ItemGroup>
 </Project>
