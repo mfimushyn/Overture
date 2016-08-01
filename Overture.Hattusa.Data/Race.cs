@@ -24,6 +24,8 @@ namespace Overture.Hattusa.Data
         public int RaceId { get; set; }
         public short TrackId { get; set; }
         public short GrandPrixId { get; set; }
+        public short Season { get; set; }
+        public System.DateTime Date { get; set; }
     
         public virtual GrandPrix GrandPrix { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

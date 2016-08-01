@@ -4,5 +4,7 @@
 	[TrackId] SMALLINT NOT NULL,
 	[GrandPrixId] SMALLINT NOT NULL,
 	CONSTRAINT [FK_Race_Track] FOREIGN KEY ([TrackId]) REFERENCES [his].[Track]([TrackId]),
-	CONSTRAINT [FK_Race_GrandPrix] FOREIGN KEY ([GrandPrixId]) REFERENCES [his].[GrandPrix]([GrandPrixId])
+	CONSTRAINT [FK_Race_GrandPrix] FOREIGN KEY ([GrandPrixId]) REFERENCES [his].[GrandPrix]([GrandPrixId]),
+	[Season] SMALLINT NOT NULL,
+	[Date] DATE NOT NULL
 )

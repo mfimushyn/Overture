@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="F1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="F1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Car">
           <Key>
             <PropertyRef Name="CarId" />
@@ -58,6 +58,8 @@
           <Property Name="RaceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="TrackId" Type="smallint" Nullable="false" />
           <Property Name="GrandPrixId" Type="smallint" Nullable="false" />
+          <Property Name="Season" Type="smallint" Nullable="false" />
+          <Property Name="Date" Type="date" Nullable="false" />
         </EntityType>
         <EntityType Name="RaceEvent">
           <Key>
@@ -374,8 +376,7 @@
             <End Role="Track" EntitySet="Track" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="F1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -449,6 +450,8 @@
           <NavigationProperty Name="Laps" Relationship="Self.FK_Lap_Race" FromRole="Race" ToRole="Lap" />
           <NavigationProperty Name="Track" Relationship="Self.FK_Race_Track" FromRole="Race" ToRole="Track" />
           <NavigationProperty Name="RaceResults" Relationship="Self.FK_RaceResult_Race" FromRole="Race" ToRole="RaceResult" />
+          <Property Name="Season" Type="Int16" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
         </EntityType>
         <EntityType Name="RaceEvent">
           <Key>
@@ -836,6 +839,8 @@
           <EntitySetMapping Name="Races">
             <EntityTypeMapping TypeName="F1Model.Race">
               <MappingFragment StoreEntitySet="Race">
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Season" ColumnName="Season" />
                 <ScalarProperty Name="RaceId" ColumnName="RaceId" />
                 <ScalarProperty Name="TrackId" ColumnName="TrackId" />
                 <ScalarProperty Name="GrandPrixId" ColumnName="GrandPrixId" />

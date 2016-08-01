@@ -6,4 +6,11 @@
 	[City] VARCHAR(100) NULL,
 	[Location] GEOGRAPHY NULL, 
     CONSTRAINT [FK_Track_Country] FOREIGN KEY ([CountryId]) REFERENCES [his].[Country]([CountryId])
-)
+);
+
+GO
+
+CREATE UNIQUE NONCLUSTERED INDEX [IX_Track_Name] ON [his].[Track]
+(
+	[Name]
+);

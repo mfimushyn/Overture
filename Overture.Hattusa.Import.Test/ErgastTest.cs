@@ -17,5 +17,15 @@ namespace Overture.Hattusa.Import.Test
 
             ergast.ExtractCircuits();
         }
+
+        [TestMethod]
+        public void ExtractRaces_MustSucceed()
+        {
+            Ergast ergast;
+
+            ergast = new Ergast();
+
+            ergast.ExtractRaces();
+        }
     }
 }
